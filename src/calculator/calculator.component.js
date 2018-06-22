@@ -18,6 +18,8 @@ function calculatorController( $scope ) {
     var isOperatorPressed;
 
     $scope.display = '0';
+    
+    init();
 
     function init() {
 
@@ -27,8 +29,6 @@ function calculatorController( $scope ) {
         stringToEvaluate = '';
         isOperatorPressed = false;
     }
-
-    init();
 
     $scope.onDisplayClick = function() {
 
