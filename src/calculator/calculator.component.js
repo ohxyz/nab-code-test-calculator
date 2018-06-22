@@ -30,7 +30,7 @@ function calculatorController( $scope ) {
         isOperatorPressed = false;
     }
 
-    $scope.onDisplayClick = function() {
+    $scope.onEqualClick = function() {
 
         if ( isNaN( firstNumber ) === true 
                 || isNaN( secondNumber ) === true
@@ -59,7 +59,7 @@ function calculatorController( $scope ) {
             return;
         }
         // NOTE: "dot" is allowed as first digit
-        else if ( numberLiteral === '.' && stringOfDigits.indexOf( '.' ) >== 0 ) {
+        else if ( numberLiteral === '.' && stringOfDigits.indexOf( '.' ) >= 0 ) {
 
             return;
         }
