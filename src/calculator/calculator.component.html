@@ -1,0 +1,21 @@
+<div class="calculator">
+    <div class="calculator__row">
+        <input class="calculator__display" ng-model="display" readonly>
+    </div>
+    <div class="calculator__row">
+        <span class="calculator__number" 
+                ng-repeat="number in [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '.' ]"
+                ng-click="onNumberClick( number )"
+        >
+            {{ number }}
+        </span>
+        <span class="calculator__operator" 
+                ng-repeat="operator in [ '+', '-', '*', '/' ]"
+                ng-click="onOperatorClick( operator )"
+        >
+            {{ operator }}
+        </span>
+        <span class="calculator__other" ng-click="onDisplayClick()">Display</span>
+        <span class="calculator__other" ng-click="onAllClearClick()">All clear</span>
+    </div>
+</div>
