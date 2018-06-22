@@ -59,7 +59,7 @@ function calculatorController( $scope ) {
             return;
         }
         // NOTE: "dot" is allowed as first digit
-        else if ( numberLiteral === '.' && stringOfDigits.indexOf( '.' ) >= 0 ) {
+        else if ( numberLiteral === '.' && stringOfDigits.indexOf( '.' ) >== 0 ) {
 
             return;
         }
@@ -87,7 +87,6 @@ function calculatorController( $scope ) {
 
             throw Error( '[Calculator] Operator is not valid.\n' );
         }
-        console.log( '1st', firstNumber, '2nd', secondNumber  )
 
         if ( isNaN( firstNumber ) === true ) {
 
@@ -96,7 +95,7 @@ function calculatorController( $scope ) {
 
         if ( isOperatorPressed === true ) {
 
-            throw Error( '[Calculator] Only one of the operators is allowed.\n' )
+            throw Error( '[Calculator] Only one of the operators is allowed.\n' );
         }
 
         isOperatorPressed = true;
