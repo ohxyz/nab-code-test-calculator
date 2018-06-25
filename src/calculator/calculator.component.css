@@ -40,6 +40,7 @@
 .calculator__other:hover {
 
     background-color: lightblue;
+    border: none;
 }
 
 .calculator__operator {
