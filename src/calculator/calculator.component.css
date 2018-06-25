@@ -1,7 +1,19 @@
+.app-container {
+
+    width: 256px;
+    margin-bottom: 30px;
+}
+
+.error {
+
+    height: 32px;
+    color: #ec0000;
+}
+
 .calculator__row {
 
     display: flex;
-    width: 256px;
+
     flex-wrap: wrap;
 }
 
@@ -31,7 +43,7 @@
     cursor: pointer;
     outline: none;
     border: 1px #cccccc solid;
-    font-size: 12px;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -39,11 +51,14 @@
 .calculator__operator:hover,
 .calculator__other:hover {
 
-    background-color: lightblue;
+    background-color: #008906;
+    color: white;
     border: none;
 }
 
 .calculator__operator {
 
-    background-color: #e8e8e8;
+    background-color: #ec0000;
+    color: white;
+    border: none;
 }

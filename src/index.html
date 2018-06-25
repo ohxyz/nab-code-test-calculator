@@ -5,8 +5,18 @@
         <script src="./index.js"></script>
         <script src="./calculator/calculator.component.js"></script>
         <link rel="stylesheet" href="./calculator/calculator.component.css">
+        <!-- Test dependencies -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.1.0/jasmine.min.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.1.0/jasmine.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.1.0/jasmine-html.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.1.0/boot.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-mocks.js"></script>
     </head>
     <body>
-        <calculator></calculator>
+        <div id="app-container" class="app-container">
+            <div id="error" class="error"></div>
+            <calculator></calculator>
+        </div>
+        <script type="text/javascript" src="./calculator/calculator.test.js"></script>
     </body>
 </html>
