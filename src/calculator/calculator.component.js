@@ -104,7 +104,7 @@ function CalculatorController( $scope ) {
 
         if ( self.isOperatorPressed === true ) {
 
-            throw Error( '[Calculator] One of the operators is already pressed.\n' );
+            throw Error( '[Calculator] One of the operators( +, -, *, / ) is already pressed.\n' );
         }
 
         self.isOperatorPressed = true;

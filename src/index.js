@@ -10,12 +10,8 @@ angular
 
                 element.bind( 'click', function() {
 
-                    var errorContainer = document.getElementById( 'error' );
-
-                    if ( errorContainer.innerText !== '' ) {
-
-                        errorContainer.innerText = '';
-                    }
+                    document.getElementById( 'error' ).innerText = '';
+                    
                 } );
             }
         }
